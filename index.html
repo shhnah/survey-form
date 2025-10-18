@@ -3,46 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Survey Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 id="title"></h1>
-    <p id="description"></p>
+    <h1 id="title">Hansel Silk-screen T-shirt Printing Survey</h1>
+    <p id="description">Help us improve our t-shirt printing services by sharing your experience with us!</p>
 
     <form id="survey-form">
         <label for="name" id="name-label">Name</label><br>
-        <input id="name" type="text" name="name" placeholder="Enter your name" required><br>
+        <input id="name" type="text" name="name" placeholder="Enter your full name" required><br>
 
         <label for="email" id="email-label">Email</label><br>
-        <input type="email" name="email" id="email" placeholder="Enter your email" required><br>
+        <input type="email" name="email" id="email" placeholder="Enter your email address" required><br>
 
-        <label for="number" id="number-label">Number (optional)</label><br>
-        <input id="number" type="number" min="18" max="90" name="number" placeholder="e.g. 18, 90" required><br>
+        <label for="number" id="number-label">How many t-shirts have you ordered from us?</label><br>
+        <input id="number" type="number" min="0" max="100" name="number" placeholder="Enter number of t-shirts" required><br>
 
-        <label for="dropdown" id="dropdown-label">Dropdown</label>
+        <label for="dropdown" id="dropdown-label">What type of printing do you prefer?</label>
         <select id="dropdown" name="dropdown" required>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option><br>
+            <option value="" selected disabled>Select an option</option>
+            <option value="standard">Standard Silk-screen</option>
+            <option value="premium">Premium Silk-screen</option>
+        </select><br>
 
-        <input type="radio" id="html" name="" value="HTML">
-        <label for="html">HTML</label><br>
-        <input type="radio" id="css" name="" value="CSS">
-        <label for="css">CSS</label><br>
-        <input type="radio" id="javascript" name="" value="JavaScript">
-        <label for="javascript">JavaScript</label><br>
+        <label id="reference-label">How did you hear about us?</label><br>
+        <input type="radio" id="social" name="reference" value="social">
+        <label for="social">Social Media</label><br>
+        <input type="radio" id="friend" name="reference" value="friend">
+        <label for="friend">Friend Referral</label><br>
+        <input type="radio" id="search" name="reference" value="search">
+        <label for="search">Search Engine</label><br>
 
-        <input type="checkbox" id="" name="" value="">
-        <label for=""> I have a bike</label><br>
-        <input type="checkbox" id="" name="" value="">
-        <label for="vehicle2"></label><br>
-        <input type="checkbox" id="" name="" value="">
-        <label for=""></label><br>
-        <input type="checkbox" id="" name="" value="">
-        <label for=""></label><br>
-        <input type="checkbox" id="" name="" value="">
-        <label for=""></label><br>
+        <label>What features are important to you? (Check all that apply)</label><br>
+        <input type="checkbox" id="quality" name="features" value="quality">
+        <label for="quality">Print Quality</label><br>
+        <input type="checkbox" id="price" name="features" value="price">
+        <label for="price">Competitive Pricing</label><br>
+        <input type="checkbox" id="speed" name="features" value="speed">
+        <label for="speed">Fast Turnaround</label><br>
+        <input type="checkbox" id="design" name="features" value="design">
+        <label for="design">Design Assistance</label><br>
+        <input type="checkbox" id="customer-service" name="features" value="customer-service">
+        <label for="customer-service">Customer Service</label><br>
 
         <label for="comments">Any comments or suggestions?</label><br>
         <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea><br>
